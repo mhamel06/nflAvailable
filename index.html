@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Text Freq</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body ng-app="nfl" ng-controller="nflCtrl">
+        <div class="row">
+            <div class="col-sm-2" ng-repeat="(posName, pos) in data">
+              <h4>{{posName}}</h4>
+              <ul class="list-group">
+                <li class="list-group-item"
+                  ng-class="{'list-group-item-success': wr.available}"
+                  ng-repeat="wr in pos.nfl">
+                  {{wr.rank}}. {{wr.name}}
+                </li>
+            </div>
+
+        </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+    <script src="scripts/app.js"></script>
+    </body>
+</html>
