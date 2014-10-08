@@ -21,6 +21,7 @@
     "jquery": "~2.1.1",
     "lodash": "~2.4.1",
     "firebase": "~1.1.0",
-    "angularfire": "~0.8.2"
+    "angularfire": "~0.8.2",
+    "underscore.string": "~2.3.3"
   }
 }
